@@ -17,6 +17,9 @@ npm install -g expo-cli
 ## mapiando path
 yarn add babel-plugin-module-resolver -D
 
+## instalando esse trem 
+react-native-reanimated
+
 ## deixar babel.config.js assim : 
 module.exports = function(api) {
   api.cache(true);
@@ -98,5 +101,8 @@ yarn add @react-native-firebase/storage
 
 
 ## criar um tema global
+só importar os arquivos da pasta theme
 
+## instalar  linear gradient
+expo install expo-linear-gradient
 
