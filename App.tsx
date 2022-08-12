@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 // import AppLoading from 'expo-app-loading';
-import { useFonts, DMSans_400Regular } from '@expo-google-fonts/dm-sans';
+import { DMSans_400Regular } from '@expo-google-fonts/dm-sans';
 import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
 import { ThemeProvider } from 'styled-components/native';
 import { StatusBar } from 'expo-status-bar'
 import { View } from 'react-native';
-import theme from './src/theme';
-
-
+import { AuthProvider } from '@hooks/auth';
 import { SignIn } from '@screens/SignIn';
+
+import theme from './src/theme';
 
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from "expo-font";
@@ -58,7 +58,9 @@ export default function App() {
     >
       <ThemeProvider theme={theme}>
           <StatusBar style="light" translucent backgroundColor="transparent"/>
-          <SignIn />
+          <AuthProvider>
+            <SignIn />
+          </AuthProvider>  
       </ThemeProvider>
     </View>
   );
