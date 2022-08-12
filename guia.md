@@ -102,8 +102,6 @@ yarn add @react-native-firebase/auth
 yarn add @react-native-firebase/storage
 
 
-
-
 ## criar um tema global
 só importar os arquivos da pasta theme
 
@@ -112,3 +110,6 @@ expo install expo-linear-gradient
 
 ## instalar react-native-gesture-handler pq n vem mais por padrao eu acho 
 yarn add react-native-gesture-handler
+
+## instalando ajudador do ios
+yarn add react-native-iphone-x-helper

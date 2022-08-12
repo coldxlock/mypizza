@@ -17,7 +17,7 @@ export function  Button({
 } : Props) {
   return (
     <Container type={type} enabled={!isLoading} {...rest}>
-        {!isLoading ? <Load /> : <Title>{title}</Title>}    
+        {isLoading ? <Load /> : <Title>{title}</Title>}    
     </Container>
   )
 }
