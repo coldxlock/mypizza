@@ -81,7 +81,11 @@ module.exports = function(api) {
 expo install @expo-google-fonts/dm-sans @expo-google-fonts/dm-serif-display
 
 # tela de login
-expo install expo-app-loading
+<!-- expo install expo-app-loading --> depreciada
+expo install expo-splash-screen
+usar conforme doc https://docs.expo.dev/versions/latest/sdk/splash-screen/
+
+
     
 
 # instalando styled-components
@@ -106,3 +110,5 @@ só importar os arquivos da pasta theme
 ## instalar  linear gradient
 expo install expo-linear-gradient
 
+## instalar react-native-gesture-handler pq n vem mais por padrao eu acho 
+yarn add react-native-gesture-handler
