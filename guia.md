@@ -113,3 +113,16 @@ yarn add react-native-gesture-handler
 
 ## instalando ajudador do ios
 yarn add react-native-iphone-x-helper
+
+## nao usar codigo abaixo 
+$npm update
+$npm install
+$node node_modules/node-sass/scripts/install.js
+$npm rebuild node-sass
+
+cd android && ./gradlew clean && ./gradlew :app:bundleRelease
+
+cd android
+./gradlew -v
+
+react-native init ProjectName --version="0.59.9" --template="typescript"
